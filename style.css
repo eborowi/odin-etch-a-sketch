@@ -1,0 +1,16 @@
+.mainEtchGrid {
+    
+}
+
+.gridRow {
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+.gridBox {
+    display:flex;
+    border: 2px solid black;
+    padding: 5px;
+}
