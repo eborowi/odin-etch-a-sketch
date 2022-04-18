@@ -12,16 +12,13 @@ for (let i=0; i<gridDimenNum;i++){
             gridRow.appendChild(gridBox);
         }
 }
-
-const gridBoxes=document.querySelectorAll(".gridBox")
-
-gridBoxes.forEach(
-    
-    gridBox=> {
-    gridBox.addEventListener("mouseover",colorChanger);
-})
-
-function colorChanger() {
-    console.log("black");
-    gridBoxes.style.backgroundColor="black";
+function gridHover(){
+    let gridBoxes=document.querySelectorAll(".gridBox")
+    gridBoxes.forEach(gridBox=> {
+        gridBox.addEventListener("mouseover",function(){
+            gridBox.style.background="black";
+        })
+    })
 }
+
+gridHover();

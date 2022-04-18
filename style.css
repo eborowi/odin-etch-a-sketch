@@ -1,5 +1,14 @@
-.mainEtchGrid {
+.mainEtchGridContainer {
+    display: flex;
+    border: 20px solid red;
+    padding: 10px;
     
+    
+}
+
+.mainEtchGrid {
+    display: flex;
+    border: 20px solid red;
 }
 
 .gridRow {
@@ -11,6 +20,6 @@
 
 .gridBox {
     display:flex;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 5px;
 }
