@@ -21,4 +21,13 @@ function gridHover(){
     })
 }
 
+function clear(){
+    let gridBoxes=document.querySelectorAll(".gridBox")
+    gridBoxes.forEach(gridBox=> {        
+            gridBox.style.background="white";        
+    })
+}
+
+document.getElementById("clearButton").addEventListener("click",clear);
+
 gridHover();

@@ -1,14 +1,16 @@
-.mainEtchGridContainer {
+#mainEtchGridContainer {
     display: flex;
-    border: 20px solid red;
-    padding: 10px;
+    justify-content: center;
+    
     
     
 }
 
-.mainEtchGrid {
-    display: flex;
-    border: 20px solid red;
+h1{
+    align-text: center;
+}
+#mainEtchGrid {
+   border: 50px solid red;
 }
 
 .gridRow {
