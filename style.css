@@ -7,10 +7,12 @@
 }
 
 h1{
-    align-text: center;
+    text-align: center;
 }
 #mainEtchGrid {
    border: 50px solid red;
+   width: 300px;
+   height: 300px;
 }
 
 .gridRow {
@@ -20,8 +22,7 @@ h1{
     
 }
 
-.gridBox {
-    display:flex;
+.gridBox {    
     border: 1px solid black;
     padding: 5px;
 }
