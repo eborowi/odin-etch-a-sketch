@@ -13,11 +13,12 @@ h1{
 #buttonContainer {
     display: flex;
     justify-content: center;
+    
     padding-bottom: 10px;
 }
 #mainEtchGrid {
     display: grid;
-    /* grid-template-columns: repeat(10,1fr); */
+   
     
     
    border: 50px solid red;
