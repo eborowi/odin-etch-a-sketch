@@ -21,7 +21,7 @@ function gridHover(){
     let gridBoxes=document.querySelectorAll(".gridBox")
     gridBoxes.forEach(gridBox=> {
         gridBox.addEventListener("mouseover",function(){
-            gridBox.style.background="  ";
+            gridBox.style.background="black";
         })
     })
 }
