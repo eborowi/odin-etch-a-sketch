@@ -2,20 +2,18 @@ let gridDimenNum= "";
 
 let mainEtchGrid=document.getElementById("mainEtchGrid");
 
+
+
 function makeGrid(){
     let currentGrids=document.querySelectorAll(".gridBox");
         currentGrids.forEach(grid=>{
             grid.remove();
         });
-for (let i=0; i<gridDimenNum;i++){
-    let gridRow=document.createElement('div');
-    gridRow.classList.add("gridRow");
-    mainEtchGrid.appendChild(gridRow);
-        for (let x=0;x<gridDimenNum;x++){
-            let gridBox=document.createElement('div');
-            gridBox.classList.add("gridBox");            
-            gridRow.appendChild(gridBox);
-        }
+    
+for (let i=0; i<(gridDimenNum*gridDimenNum);i++){
+    let gridBox=document.createElement('div');
+    gridBox.classList.add("gridBox");
+    mainEtchGrid.appendChild(gridBox);        
 }
 
 }
@@ -23,7 +21,7 @@ function gridHover(){
     let gridBoxes=document.querySelectorAll(".gridBox")
     gridBoxes.forEach(gridBox=> {
         gridBox.addEventListener("mouseover",function(){
-            gridBox.style.background="black";
+            gridBox.style.background="  ";
         })
     })
 }
@@ -41,18 +39,21 @@ document.getElementById("clearButton").addEventListener("click",clear);
 
 function make10grid(){
     gridDimenNum=10;
+    mainEtchGrid.style.gridTemplateColumns='repeat('+gridDimenNum+',1fr)';
     makeGrid();
     gridHover();
 }
 
 function make30grid(){
     gridDimenNum=30;
+    mainEtchGrid.style.gridTemplateColumns='repeat('+gridDimenNum+',1fr)';
     makeGrid();
     gridHover();
 }
 
 function make100grid(){
     gridDimenNum=100;
+    mainEtchGrid.style.gridTemplateColumns='repeat('+gridDimenNum+',1fr)';
     makeGrid();
     gridHover();
 }
